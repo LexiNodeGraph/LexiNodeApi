@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add tailwindcss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <title>LexiNodeAp</title>
+</head>
+<body>
+    <!-- add navigation bar tailwindcss -->
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+            <div class="flex items-center flex-shrink-0 text-black-700 mr-6">
+                <span class="font-semibold text-xl tracking-tight"><a href="/">LexiNodeApi</a></span>
+            </div>
+
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/graphs" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black-700 mr-4">
+                        Grafos
+                    </a>
+
+   
+                </div>
+                <div>
+                    <a href="/Login" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black-700 border-black-700 hover:border-transparent hover:text-teal-500 hover:bg-black-700 mt-4 lg:mt-0">Entrar</a>
+                    <a href="/Register" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black-700 border-black-700 hover:border-transparent hover:text-teal-500 hover:bg-black-700 mt-4 lg:mt-0">Registrar</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mx-auto">
+        <div class="flex justify-center py-20">
+            <div class="w-full max-w-sm">
+                <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
+                    <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
+                        <h1 class="text-center">LexiNodeApi</h1>
+                    </div>
+                    <div class="w-full p-6">
+
+                        <!-- FORMULÁRIO -->
+                        <form class="user" method="POST" action="">
+
+                            <!-- Email -->
+                            <div class="flex flex-wrap mb-6">
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
+                                    Email
+                                </label>
+                                <input 
+                                id="full-name" 
+                                class="form-control block w-full px-3 py-1 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                                name="full-name" 
+                                alue="" 
+                                required autocomplete="full-name" 
+                                autofocus
+                                placeholder="Email"
+                                type="email"
+                                >                            
+                            </div>
+
+                            <!-- Senha -->
+                            <div class="flex flex-wrap mb-6">
+                                <label for="password" class="block text-gray-700 text-sm font-bold mb-2 mt-0">
+                                    Senha
+                                </label>
+                                <input 
+                                id="full-name" 
+                                class="form-control block w-full px-3 py-1 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                                name="full-name" 
+                                alue="" 
+                                required autocomplete="full-name" 
+                                autofocus
+                                placeholder="Senha"
+                                type="password"
+                                >                            
+                            </div>
+
+                            <div class="flex mb-6">
+                                <div class="mx-auto text-center">
+                                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                        Entrar
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-center text-gray-500 text-xs">
+                                &copy;2022 LexiNodeApi. No rights reserved.
+                            </p>
+                        </form>
+                        <!-- FIM FORMULÁRIO -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
