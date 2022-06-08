@@ -244,6 +244,7 @@
   },
   "scripts": {
     "start": "nodemon build/src/index.js",
+    "it": "npm i && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
