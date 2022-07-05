@@ -18,19 +18,7 @@ app.get("/", ( req, res ) => {
     res.render("index");
 });
 
-app.get("/graphs", ( req, res ) => {
-    res.render("graphs.ejs");
-});
-
 app.get("/data", async (req, res) => {
-    await prisma.$connect();
-    const data = await prisma.dataset.findUnique({
-        where: {
-            id: "629a36276b50cb2f8c950891"
-            } 
-          });
-    await prisma.$disconnect();
-    res.json(data);
 });
 
 app.listen( port, () => {
